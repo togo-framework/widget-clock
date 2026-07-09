@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { registerWidget } from "@togo-framework/widget";
 
-function Clock() {
+export function Clock() {
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
     const id = setInterval(() => setNow(new Date()), 1000);
